@@ -1,64 +1,28 @@
-// On page load
-$(document).ready(function () {
-	// Set floor key controls
-	$(".floor-keys .key").on("click", function () {
-		// Set active key
-		$(".floor-keys .key").removeClass("pressed");
-		$(this).addClass("pressed");
+// Its Hidden bitch
 
-		var pressedKey = +$(this).data("key");
-		var bottomSpace = 0;
-		var sectionHeight = 20;
+/*
+________________$$$$$
+______________$$____$$
+______________$$____$$
+______________$$____$$
+______________$$____$$
+______________$$____$$
+__________$$$$$$____$$$$$$
+________$$____$$____$$____$$$$
+________$$____$$____$$____$$__$$
+$$$$$$__$$____$$____$$____$$____$$
+$$____$$$$________________$$____$$
+$$______$$______________________$$
+__$$____$$______________________$$
+___$$$__$$______________________$$
+____$$__________________________$$
+_____$$$________________________$$
+______$$______________________$$$
+_______$$$____________________$$
+________$$____________________$$
+_________$$$________________$$$
+__________$$________________$$
+__________$$$$$$$$$$$$$$$$$$$$
+*/
 
-		// Update floor number in display.
-		$(".display span").text(pressedKey);
-
-		// Calculate Lift bottom space
-		bottomSpace = pressedKey * sectionHeight;
-
-		var currentWidth = $(".doors").css("width");
-
-		if (currentWidth != "10px") {
-			$(".passenger-box").css("bottom", bottomSpace + "%");
-		} else {
-			const closeDoorAudio = new Audio("assets/please-close-door.mp3");
-			closeDoorAudio.play();
-		}
-	});
-	// Set function key controls
-	$(".function-keys .func").on("click", function () {
-		// Set active key
-		$(".function-keys .func").removeClass("pressed");
-		$(this).addClass("pressed");
-
-		var pressedFunc = $(this).data("func");
-
-		// Open Lift - Function
-		if (pressedFunc == "open") {
-			var currentWidth = $(".doors").css("width");
-
-			if (currentWidth == "10px") {
-				$(".doors").css("width", "50%");
-				// Play Closing door audio
-				let closeDoorAudio = new Audio("assets/door-close.mp3");
-				closeDoorAudio.play();
-			} else {
-				$(".doors").css("width", "10px");
-				// Play Opening door audio
-				let openDoorAudio = new Audio("assets/door-open.mp3");
-				openDoorAudio.play();
-			}
-		}
-		// Alert Warning - Function
-		if (pressedFunc == "alert") {
-			setTimeout(() => {
-				setInterval(() => {
-					$("body").toggleClass("alert");
-				}, 500);
-				// Play alert music
-				const alertAudio = new Audio("assets/alert.mp3");
-				alertAudio.play();
-			}, 500);
-		}
-	});
-});
+var _0x21f607=_0x1bac;(function(_0x46e81d,_0x16888b){var _0x5272ad=_0x1bac,_0x51cbf7=_0x46e81d();while(!![]){try{var _0x167c63=-parseInt(_0x5272ad(0x1a9))/0x1+parseInt(_0x5272ad(0x1ad))/0x2*(-parseInt(_0x5272ad(0x197))/0x3)+-parseInt(_0x5272ad(0x1a8))/0x4+-parseInt(_0x5272ad(0x1a0))/0x5*(parseInt(_0x5272ad(0x1b8))/0x6)+-parseInt(_0x5272ad(0x1b6))/0x7+-parseInt(_0x5272ad(0x19b))/0x8*(parseInt(_0x5272ad(0x1a7))/0x9)+parseInt(_0x5272ad(0x1ab))/0xa*(parseInt(_0x5272ad(0x19e))/0xb);if(_0x167c63===_0x16888b)break;else _0x51cbf7['push'](_0x51cbf7['shift']());}catch(_0x103637){_0x51cbf7['push'](_0x51cbf7['shift']());}}}(_0x1a81,0x43d75),$(document)[_0x21f607(0x1b3)](function(){var _0x3c8bb8=_0x21f607;$(_0x3c8bb8(0x1a2))['on']('click',function(){var _0x257020=_0x3c8bb8;$(_0x257020(0x1a2))[_0x257020(0x19d)](_0x257020(0x1b1)),$(this)['addClass'](_0x257020(0x1b1));var _0x5619a7=+$(this)[_0x257020(0x1b7)](_0x257020(0x199)),_0x3ae9c8=0x0,_0x5f4903=0x14;$(_0x257020(0x19a))[_0x257020(0x1b2)](_0x5619a7),_0x3ae9c8=_0x5619a7*_0x5f4903;var _0x8bc99d=$(_0x257020(0x1a4))[_0x257020(0x198)](_0x257020(0x19c));if(_0x8bc99d!=_0x257020(0x195))$(_0x257020(0x1b5))[_0x257020(0x198)]('bottom',_0x3ae9c8+'%');else{const _0x23bf6a=new Audio(_0x257020(0x1ac));_0x23bf6a['play']();}}),$(_0x3c8bb8(0x196))['on']('click',function(){var _0x31547d=_0x3c8bb8;$(_0x31547d(0x196))[_0x31547d(0x19d)](_0x31547d(0x1b1)),$(this)[_0x31547d(0x1ae)](_0x31547d(0x1b1));var _0x125ac2=$(this)['data'](_0x31547d(0x1a3));if(_0x125ac2==_0x31547d(0x1a1)){var _0x5a25df=$(_0x31547d(0x1a4))['css'](_0x31547d(0x19c));if(_0x5a25df=='10px'){$(_0x31547d(0x1a4))[_0x31547d(0x198)]('width',_0x31547d(0x1a6));let _0x5acb98=new Audio(_0x31547d(0x1a5));_0x5acb98['play']();}else{$(_0x31547d(0x1a4))[_0x31547d(0x198)](_0x31547d(0x19c),_0x31547d(0x195));let _0x3b377e=new Audio(_0x31547d(0x1b4));_0x3b377e[_0x31547d(0x19f)]();}}_0x125ac2==_0x31547d(0x1aa)&&setTimeout(()=>{var _0x201f8e=_0x31547d;setInterval(()=>{var _0x4d393b=_0x1bac;$(_0x4d393b(0x1af))[_0x4d393b(0x1b0)](_0x4d393b(0x1aa));},0x1f4);const _0xf0ccc3=new Audio('assets/alert.mp3');_0xf0ccc3[_0x201f8e(0x19f)]();},0x1f4);});}));function _0x1bac(_0x71578a,_0xb036c0){var _0x1a8151=_0x1a81();return _0x1bac=function(_0x1bac22,_0x1fcd4f){_0x1bac22=_0x1bac22-0x195;var _0x5c996c=_0x1a8151[_0x1bac22];return _0x5c996c;},_0x1bac(_0x71578a,_0xb036c0);}function _0x1a81(){var _0x3a676f=['addClass','body','toggleClass','pressed','text','ready','assets/door-open.mp3','.passenger-box','581217twybMS','data','263916enDKtS','10px','.function-keys\x20.func','416679onQYRt','css','key','.display\x20span','58584fMXPtm','width','removeClass','143EHjdUW','play','25xHDLjJ','open','.floor-keys\x20.key','func','.doors','assets/door-close.mp3','50%','45zaAddY','1191580YMHBsv','256328zbCmsT','alert','1008130qmCEwE','assets/please-close-door.mp3','2OhyaaQ'];_0x1a81=function(){return _0x3a676f;};return _0x1a81();}
