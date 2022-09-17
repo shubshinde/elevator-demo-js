@@ -124,6 +124,15 @@ body.alert {
     -o-transition: all 3s ease;
 }
 
+.credits {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.credits span {
+    color: red;
+}
+
 /* States */
 .pressed {
     border: 2px solid red;
