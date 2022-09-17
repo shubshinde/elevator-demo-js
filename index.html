@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Elevator - Simulation</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+
+	<body>
+		<section class="lift-container">
+			<div class="lift-section">
+				<div class="lift-blocks">
+					<div class="section-block">4</div>
+					<div class="section-block">3</div>
+					<div class="section-block">2</div>
+					<div class="section-block">1</div>
+					<div class="section-block">G</div>
+					<div class="passenger-box">
+						<div class="doors"></div>
+						<div class="doors"></div>
+					</div>
+				</div>
+			</div>
+			<div class="lift-controls">
+				<div class="display">
+					<span>0</span>
+				</div>
+				<div class="floor-keys">
+					<button class="key" data-key="1">1</button>
+					<button class="key" data-key="2">2</button>
+					<button class="key" data-key="3">3</button>
+					<button class="key" data-key="4">4</button>
+					<button class="key" data-key="0">G</button>
+				</div>
+				<hr />
+				<div class="function-keys">
+					<button class="func" data-func="open">|</button>
+					<button class="func" data-func="alert" data-status="inactive">
+						⚠
+					</button>
+				</div>
+			</div>
+		</section>
+
+		<div class="ground"></div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+		<script src="script.js" defer></script>
+	</body>
+</html>
